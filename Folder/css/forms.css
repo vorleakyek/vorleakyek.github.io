@@ -1,0 +1,103 @@
+/* border: 5px red solid; */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../img/galaxy.jpg);
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #e9a55d;
+}
+p,
+[for="abtype"] {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
+section {
+  flex-basis: 57%;
+  margin-right: 10%;
+}
+aside {
+  flex-basis: 33%;
+}
+
+fieldset {
+  border: 1px solid gold;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+label {
+  display: block;
+  padding-bottom: 0.3rem;
+}
+
+textarea {
+  height: 10rem;
+  padding: 1rem;
+}
+
+select {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 1rem;
+  margin: 2rem 0;
+  background-color: bisque;
+  color: green;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: gold;
+  font-weight: bold;
+}
+
+/*The [] indicates the attributes selector 
+All of the input tag, except radio button and checkbox*/
+input:not([type="radio"]):not([type="checkbox"]),
+textarea,
+select {
+  display: block;
+  margin-bottom: 1.3rem;
+  width: 20rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border-radius: 10px;
+  border: none;
+}
+
+h1,
+legend,
+h3 {
+  font-family: "MonteCarlo", cursive;
+}
+
+iframe {
+  border: 5px red solid;
+}
