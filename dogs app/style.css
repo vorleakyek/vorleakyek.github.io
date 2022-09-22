@@ -1,0 +1,63 @@
+body {
+  background-color: antiquewhite;
+  margin: 0;
+}
+
+h1 {
+  background-color: burlywood;
+  margin-top: 0;
+  padding: 10px;
+  text-align: center;
+  color: cadetblue;
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+}
+
+select {
+  color: teal;
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: wheat;
+  border-radius: 10px;
+  border: 3px solid teal;
+  outline: none;
+  display: block;
+  margin: 45px 0px 25px 25px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.spin {
+  display: blcok;
+  animation: spin 1s ease-in-out infinite;
+  text-align: center;
+  font-size: 50px;
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 80vh;
+  position: absolute;
+  left: 250px;
+  top: 100px;
+  border-radius: 30px;
+}
+
+h3 {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
